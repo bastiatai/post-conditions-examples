@@ -128,7 +128,7 @@ const postConditions = [
 
 This work is part of a larger effort to improve Stacks developer documentation. See the related GitHub issue:
 
-👉 **[stacks-network/docs#XXXX](https://github.com/stacks-network/docs/issues/XXXX)** (issue number pending)
+👉 **[stacks-network/docs#1842](https://github.com/stacks-network/docs/issues/1842)**
 
 ## Testing
 
