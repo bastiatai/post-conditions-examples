@@ -177,7 +177,7 @@ describe("Post-Conditions Best Practices - donation-tracker", () => {
     });
   });
 
-  describe("SCENARIO 3: Read-only functions", () => {
+  describe("SCENARIO 4: Read-only functions", () => {
     it("returns contract balance (total raised)", () => {
       // Start with zero
       const initialBalance = simnet.callReadOnlyFn(
@@ -306,7 +306,7 @@ describe("Post-Conditions Best Practices - donation-tracker", () => {
     });
   });
 
-  describe("SCENARIO 4: Additional read-only checks", () => {
+  describe("SCENARIO 5: Additional read-only checks", () => {
     it("returns zero for donor with no donations", () => {
       const donation = simnet.callReadOnlyFn(
         "donation-tracker",
