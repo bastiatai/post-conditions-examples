@@ -14,7 +14,7 @@
 
 ;; Helper to get contract principal
 (define-private (get-contract-principal)
-  (unwrap-panic (as-contract? () tx-sender))
+  (as-contract tx-sender)
 )
 
 ;; SCENARIO 1: Simple STX Transfer (most common)
@@ -63,7 +63,7 @@
   )
 )
 
-;; SCENARIO 3: No Post-Conditions Needed (read-only)
+;; Read-only helper (no post-conditions needed)
 ;; Read-only functions never need post-conditions
 (define-read-only (get-contract-balance)
   ;; In a real contract, this would check the contract's STX balance
